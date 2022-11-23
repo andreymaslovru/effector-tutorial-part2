@@ -1,9 +1,9 @@
 import React from 'react'
 import { Typography } from '@material-ui/core'
 
-import NoteHandler from '../../components/noteHandler'
 import { NotesListVariant } from '../../components/notesList'
 import { useStyles } from './styles'
+import { NoteHandler } from '../../components/noteHandler'
 
 const NotesPage: React.FC = () => {
   const styles = useStyles()
