@@ -25,6 +25,10 @@ export class NotesList extends View {
 
     render() {
         return <div>
+            { this.notes().items().length
+                ? null
+                : <div id='empty'>List is empty</div>
+            }
             { this.notes().items().map( note => (
                 <NoteRow
                     id={ 'note/' + note.id }
