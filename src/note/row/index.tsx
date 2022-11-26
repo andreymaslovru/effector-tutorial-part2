@@ -27,11 +27,11 @@ export class NoteRow extends View {
         return next ?? this.note().text()
     }
 
-    protected editOn() {
+    editOn() {
         this.editing( true )
     }
     
-    protected save() {
+    save() {
         this.note().text( this.text() )
         this.editing( false )
     }

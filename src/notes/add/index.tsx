@@ -23,7 +23,7 @@ export class NotesAdd extends View {
         return next
     }
 
-    protected add() {
+    submit() {
         
         const text = this.text()
         if( !text ) return
@@ -36,13 +36,13 @@ export class NotesAdd extends View {
     render() {
         return <div>
             <UiString
-                id='addText'
+                id='text'
                 text={ next => this.text( next ) }
                 hint={ ()=> 'New Note...' }
             />
             <UiButton
-                id='add'
-                click={ ()=> this.add() }
+                id='submit'
+                click={ ()=> this.submit() }
                 title={ ()=> 'Add' }
             />
         </div>
