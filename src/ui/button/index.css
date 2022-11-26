@@ -1,0 +1,13 @@
+.UiButton {
+    font: inherit;
+    background: none;
+    border: none;
+    color: #2556d2;
+    cursor: pointer;
+    padding: .5rem .75rem;
+    text-transform: uppercase;
+}
+
+.UiButton:active {
+    background: hsla( 0, 0%, 0%, .1 );
+}

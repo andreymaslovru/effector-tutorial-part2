@@ -1,0 +1,13 @@
+.UiString {
+    border: none;
+    box-shadow: inset 0 0 0 1px gray;
+    padding: .5rem .75rem;
+    font: inherit;
+    background: none;
+    color: inherit;
+}
+
+.UiString:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 1px #2556d2;
+}

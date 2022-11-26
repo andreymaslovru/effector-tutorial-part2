@@ -1,13 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import App from './App'
+/** @jsxRuntime classic */
+/** @jsx $mol_jsx */
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-)
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-)
+import {
+  $mol_jsx,
+  $mol_jsx_attach as attach,
+} from "mol_jsx_lib/web";
+
+import { App } from "./app";
+
+attach( document, () => <App id="app" /> )

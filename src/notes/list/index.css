@@ -1,0 +1,8 @@
+.NotesList {
+    padding: .75rem;
+}
+
+.NotesList_empty {
+    color: red;
+    padding: .5rem .75rem;
+}
